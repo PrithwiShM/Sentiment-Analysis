@@ -1,6 +1,6 @@
 ---
 title: "Part II"
-author: "Karthik Edupuganti, Robert Ferrand, Rachel Hencher, Prithwish Maiti"
+author: "Prithwish Maiti"
 date: "`r Sys.Date()`"
 output:
   pdf_document: default
@@ -30,7 +30,7 @@ library(naivebayes)
 library(MASS)
 
 # Read in GloVe data
-setwd("C:/Users/prith/OneDrive/Desktop/NCSU/1st Sem/ST563/Final_Project")
+
 glove_data <- read.table("Glove.6B/glove.6B.100d.txt", sep = " ", quote = "", comment.char = "", header = FALSE, stringsAsFactors = FALSE)
 
 # Read in Stanford Sentiment Treebank (SST) data

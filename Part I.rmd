@@ -1,6 +1,6 @@
 ---
 title: "Part I"
-author: "Karthik Edupuganti, Robert Ferrand, Rachel Hencher, Prithwish Maiti"
+author: "Prithwish Maiti"
 date: "2023-12-09"
 output:
   pdf_document: default
@@ -21,8 +21,8 @@ library(tm)
 library(data.table)
 
 #Change your working directory here
-setwd("C:/Users/rober/OneDrive/Desktop/563final")
-#create training, testing, validation
+
+#load training, testing, validation data
 training_data <- fread("train.csv", header = TRUE, quote = "")
 testing_data <- fread("test.csv", header = TRUE, quote = "")
 validation_data <- fread("validation.csv", header = TRUE, quote = "")

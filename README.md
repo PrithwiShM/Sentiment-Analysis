@@ -20,6 +20,33 @@ Throughout the project multiple statistical methods will be used to analyze the 
 classification prediction in Part II, and will conclude by using di!erent methods for five-class sentiment classification prediction in Part III.
 In order to prepare our data for analysis, we began by preprocessing the data in order to remove punctuation and numbers, and to convert uppercase letters to lowercase. This allowed us to create a corpus which we could then transform into a document-term matrix by utilizing the DocumentTermMatrix and data.table functions. Additionally, we reduced the dimensionality by removing stop words and sparse words.
 
+### Dependensies and Usage
+
+The project is developed in R and requires the Installation of the following libraries-
+This project relies on the following R packages:
+
+- **leaps**
+- **tm**  
+- **slam**  
+- **knitr**  
+- **dplyr**  
+- **data.table**  
+- **stringr**  
+- **purrr**  
+- **pls**  
+- **caret**  
+- **naivebayes**  
+- **MASS**  
+- **data.table**
+- **rpart**
+- **rpart.plot**
+- **klaR**
+- **randomForest**
+- **gbm**
+- **e1071**
+
+The code is contained in R markdown, hence the usage of a R- studio is highly recommended.
+
 ### Part 1 
 
 #### Forward Stepwise Selection
@@ -38,6 +65,10 @@ that of the forward stepwise selection method, where extremely polarizing words 
 such as “crap”, “insulting”, “amazing”, “breathtaking”, etc.
 
 ### Part 2
+
+For this part and the next part, Glove embeddings will be required.
+Please visit the (this website)[https://nlp.stanford.edu/projects/glove/] to get the 'glove.6B.zip' and place the extracted folder in the working directory ( root of the github repo).
+
 #### Logistic Regression
 Logistic regression is a classification technique that is most often used for binary classification, where it
 models the probability of a particular class.
