@@ -14,7 +14,7 @@ Table 1: Examples from Stanford Sentiment Treebank
 
 • **Bag-of-Words** first define a ”dictionary” of k words and transform each sentence into a length-k vector depending on the existence of each word in the sentence to embed. For instance, if the dictionary is {artist, worth, kids, verdict} then the vector expression for the example sentence is [0, 1, 1, 0].
 
-• **Word Embedding**, instead, has a look-up projection matrix3 for most of the words, and we can simplify the sentence embedding as the pooling average across embedding over words. Assuming the word vectors in the example are [v1, v2, v3, v4, v5, v6] then the corresponding sentence embedding is 1 6 P6 i=1 vi.
+• **Word Embedding**, instead, has a look-up projection matrix3 for most of the words, and we can simplify the sentence embedding as the pooling average across embedding over words. Assuming the word vectors in the example are [v1, v2, v3, v4, v5, v6] then the corresponding sentence embedding is $\displaystyle \frac{1}{6} \sum_{i=1}^{6} v_i$.
 
 ## Methodology
 
