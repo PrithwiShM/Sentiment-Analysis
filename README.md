@@ -11,7 +11,9 @@ Table 1: Examples from Stanford Sentiment Treebank
 | final verdict: you’ve seen it all before.        | 0.18             | negative        | very negative    |
 
 **Language Modeling2**: One of the difficulties of modeling languages is how to transform them into numerical vectors so we can apply machine learning methods to them. Using ”It’s worth taking the kids to” as an example, two common practices are:
+
 • **Bag-of-Words** first define a ”dictionary” of k words and transform each sentence into a length-k vector depending on the existence of each word in the sentence to embed. For instance, if the dictionary is {artist, worth, kids, verdict} then the vector expression for the example sentence is [0, 1, 1, 0].
+
 • **Word Embedding**, instead, has a look-up projection matrix3 for most of the words, and we can simplify the sentence embedding as the pooling average across embedding over words. Assuming the word vectors in the example are [v1, v2, v3, v4, v5, v6] then the corresponding sentence embedding is 1 6 P6 i=1 vi.
 
 ## Methodology
